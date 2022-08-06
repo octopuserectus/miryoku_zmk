@@ -1,0 +1,15 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build jorne and kyria for nrfmicro 1.3'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nrfmicro_13"]'
+      shield: '["jorne_left","jorne_right"]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
+      alphas: '["QWERTY"]'
+      clipboard: '["WIN"]'
