@@ -1,6 +1,8 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#include <dt-bindings/zmk/bt.h>
+
 #if !defined (MIRYOKU_LAYOUTMAPPING_JIAN)
 
 #define XXX &none
